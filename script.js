@@ -29,30 +29,37 @@ function convertCGPA() {
   else if(cgpa < 4.75){
     grade = "D";
     per = 6.6*cgpa + 13.6;
+    per.toFixed(2);
   }
   else if(cgpa < 5.25){
     grade = "C";
     per = 10*cgpa - 2.5;
+    per.toFixed(2);
   }
   else if(cgpa < 5.75){
     grade = "B";
-    per = 10*cgpa - 2.5
+    per = 10*cgpa - 2.5;
+    per.toFixed(2);
   }
   else if(cgpa < 6.75){
     grade = "B+";
     per = 5*cgpa + 26.5;
+    per.toFixed(2);
   }
   else if(cgpa < 8.25){
     grade = "A";
     per = 10*cgpa - 7.5;
+    per.toFixed(2);
   }
   else if(cgpa < 9.5){
     grade = "A+";
     per = 12*cgpa - 25;
+    per.toFixed(2);
   }
   else{
     grade = "O";
     per = 20*cgpa - 100;
+    per.toFixed(2);
   }
   
   // Calculating class

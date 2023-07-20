@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fff;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+.wrapper{
+  background-color: #fff;
+  width: 500px;
+  padding: 5px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper .topbox{
+  color: #A80707;
+}
+
+.wrapper .topbox .imagediv{
+  padding: 5px 0px;
+}
+
+.wrapper .topbox a{
+  text-decoration: none;
+  color: #A80707;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.wrapper .topbox a:hover, .wrapper .topbox a:active{
+  text-shadow: 1px 1px #000;
+}
+
+.wrapper .mainbox{
+  background-color: #E8EAF6;
+  padding: 15px;
+  margin: 10px 0px 5px;
+  border: 4px solid #1A237E;
+  border-radius: 5px;
+}
+
+.wrapper .mainbox .title{
+  padding: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #fff;
+  border-top: 1px solid #1A237E;
+  border-right: 4px solid #1A237E;
+  border-bottom: 4px solid #1A237E;
+  border-left: 1px solid #1A237E;
+  border-radius: 15px;
+}
+
+.wrapper .mainbox .input_row{
+  display: flex;
+  padding: 10px;
+}
+
+.wrapper .mainbox .input_row .input_label{
+  width: 35%;
+  padding: 4px;
+}
+
+.wrapper .mainbox .input_row .input_box{
+  width: 30%;
+}
+
+.wrapper .mainbox .input_row .input_box input{
+  padding: 4px;
+  border: 2px solid #777;
+  width: 65px;
+  border-radius: 5px;
+}
+
+.wrapper .mainbox .input_row .input_box input:focus{
+  border: 2px solid #222;
+  background-color: #E3F2FD;
+}
+
+.wrapper .mainbox .input_row .input_button{
+  width: 35%;
+}
+
+.wrapper .mainbox .input_row .input_button button{
+  background-color: white; 
+  color: #1A237E;
+  border: 2px solid #1A237E;
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.wrapper .mainbox .input_row .input_button button:hover{
+  background-color: #C5CAE9;
+}
+
+.wrapper .mainbox .input_row .input_button button:active{
+  background-color: #1A237E;
+  color: #fff;
+}
+
+.wrapper .mainbox #error_msg{
+  color: #d00;
+  padding: 0px 5px;
+}
+
+.wrapper .mainbox .output_table{
+  margin: 5px;
+}
+
+.wrapper .mainbox .output_table table{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFEE58;
+}
+
+.wrapper .mainbox .output_table table .col1{
+  text-align: left;
+}
+
+.wrapper .mainbox .output_table table, td {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.wrapper .mainbox .download_button button{
+  background-color: white; 
+  color: #1A237E;
+  border: 2px solid #1A237E;
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.wrapper .mainbox .download_button button:hover{
+  background-color: #C5CAE9;
+}
+
+.wrapper .mainbox .download_button button:active{
+  background-color: #1A237E;
+  color: #fff;
+}
+
+.wrapper .bottombox .credits{
+  text-align: right;
+  margin-top: 15px;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 505px){
+  .wrapper{
+    width: 95%;
+  }
+  
+  .wrapper .mainbox .input_row{
+    flex-direction: column;
+  }
+  
+  .wrapper .mainbox .input_row .input_label, .wrapper .mainbox .input_row .input_box, .wrapper .mainbox .input_row .input_button{
+    width: 100%;
+    padding: 5px;
+  }
+}
